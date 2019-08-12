@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--describe the animation for activity_motion_sample_step2.xml-->
+<!--animate by dragging target view-->
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--At the start, all three stars are centered at the bottom of the screen.-->
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+                android:id="@+id/ic_android_blue"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        <Constraint
+                android:id="@+id/ic_android_left"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:alpha="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        <Constraint
+                android:id="@+id/ic_android_right"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:alpha="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+    </ConstraintSet>
+
+    <!--Define the end constraint to set use a chain to position all three stars together below @id/tipText.-->
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+                android:id="@+id/ic_android_left"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:layout_marginEnd="20dp"
+                android:alpha="1.0"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/ic_android_blue"
+                app:layout_constraintTop_toBottomOf="@id/tipText"/>
+        <Constraint
+                android:id="@+id/ic_android_blue"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                app:layout_constraintEnd_toStartOf="@id/ic_android_right"
+                app:layout_constraintStart_toEndOf="@id/ic_android_left"
+                app:layout_constraintTop_toBottomOf="@id/tipText"/>
+        <Constraint
+                android:id="@+id/ic_android_right"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:layout_marginStart="20dp"
+                android:alpha="1.0"
+                app:layout_constraintStart_toEndOf="@id/ic_android_blue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tipText"/>
+    </ConstraintSet>
+    <!-- A transition describes an animation via start and end state -->
+    <Transition
+            app:constraintSetStart="@id/start"
+            app:constraintSetEnd="@id/end">
+        <!-- MotionLayout will track swipes relative to this view -->
+        <OnSwipe app:touchAnchorId="@id/ic_android_blue"/>
+    </Transition>
+</MotionScene>

@@ -13,7 +13,6 @@
         android:layout_marginEnd="2dp"
         tools:targetApi="m"
         tools:ignore="UnusedAttribute">
-
     <ImageView
             android:id="@+id/card_item_avatar"
             android:layout_width="38dp"

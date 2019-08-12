@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          xmlns:tools="http://schemas.android.com/tools" package="com.moos.constraint">
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.moos.constraint">
 
     <application
             android:allowBackup="true"
@@ -10,7 +11,11 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".MainActivity">
+        <!--<activity android:name=".practice.MotionSampleActivity">-->
+        <!--</activity>-->
+        <activity android:name=".DetailActivity">
+        </activity>
+        <activity android:name=".practice.MotionSampleActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 

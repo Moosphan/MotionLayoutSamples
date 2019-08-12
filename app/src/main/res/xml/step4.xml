@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--describe the animation for activity_motion_sample_step3.xml-->
+<!--animate in the path way on a view-->
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- Constraints to apply at the start of the animation -->
+    <ConstraintSet android:id="@+id/start">
+
+        <Constraint
+                android:id="@id/windmill"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <Constraint
+                android:id="@id/tipText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.0"
+                android:layout_marginStart="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/windmill"
+                app:layout_constraintTop_toTopOf="@id/windmill"/>
+    </ConstraintSet>
+    <!-- Constraints to apply at the end of the animation -->
+    <ConstraintSet android:id="@+id/end">
+        <!--this view end point should be at bottom of parent-->
+        <Constraint
+                android:id="@id/windmill"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        <Constraint
+                android:id="@+id/tipText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="1.0"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="42dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/windmill"
+                app:layout_constraintTop_toTopOf="@id/windmill"/>
+    </ConstraintSet>
+
+    <!-- A transition describes an animation via start and end state -->
+    <Transition
+            app:constraintSetStart="@id/start"
+            app:constraintSetEnd="@id/end"
+            app:duration="2800">
+        <!--A KeyPosition modifies the path a view takes between the start and the end ConstraintSet.-->
+
+        <KeyFrameSet>
+            <KeyPosition
+                    app:framePosition="50"
+                    app:motionTarget="@id/windmill"
+                    app:keyPositionType="parentRelative"
+                    app:percentY="0.5"/>
+            <KeyPosition
+                    app:framePosition="25"
+                    app:motionTarget="@id/windmill"
+                    app:keyPositionType="parentRelative"
+                    app:percentY="0.6"/>
+            <KeyPosition
+                    app:framePosition="75"
+                    app:motionTarget="@id/windmill"
+                    app:keyPositionType="parentRelative"
+                    app:percentY="0.6"/>
+            <!--apply other animation attributes-->
+
+            <!--前半段的动画效果：逆时针旋转一圈，同时放大一倍-->
+            <KeyAttribute
+                    app:motionTarget="@id/windmill"
+                    android:rotation="-360"
+                    android:scaleX="2.0"
+                    android:scaleY="2.0"
+                    app:framePosition="50"/>
+            <!--后半段的动画效果：逆时针旋转一圈，同时变回原样-->
+            <KeyAttribute
+                    app:motionTarget="@id/windmill"
+                    android:rotation="-720"
+                    app:framePosition="100"/>
+            <!--延迟动画——提示文本在0-85过程中将透明度一直维持在0.0-->
+            <KeyAttribute
+                    app:motionTarget="@id/tipText"
+                    app:framePosition="85"
+                    android:alpha="0.0"/>
+
+            <!--自定义需要改变的属性,支持自定义控件-->
+            <!--A CustomAttribute can be used to set any value that has a setter.-->
+            <KeyAttribute
+                    app:motionTarget="@id/windmill"
+                    app:framePosition="0">
+                <CustomAttribute
+                        app:attributeName="colorFilter"
+                        app:customColorValue="@android:color/white"/>
+            </KeyAttribute>
+            <KeyAttribute
+                    app:motionTarget="@id/windmill"
+                    app:framePosition="50">
+                <CustomAttribute
+                        app:attributeName="colorFilter"
+                        app:customColorValue="#E656E8"/>
+            </KeyAttribute>
+            <KeyAttribute
+                    app:motionTarget="@id/windmill"
+                    app:framePosition="100">
+                <CustomAttribute
+                        app:attributeName="colorFilter"
+                        app:customColorValue="@android:color/white"/>
+            </KeyAttribute>
+        </KeyFrameSet>
+
+        <OnClick
+                app:targetId="@id/windmill"
+                app:clickAction="toggle"/>
+    </Transition>
+
+</MotionScene>

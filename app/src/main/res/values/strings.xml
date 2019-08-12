@@ -1,0 +1,5 @@
+<resources xmlns:tools="http://schemas.android.com/tools"
+ tools:locale = "cn">
+    <string name="app_name">ConstraintSample</string>
+    <string name="header_image_string" tools:ignore="MissingTranslation">header image</string>
+</resources>

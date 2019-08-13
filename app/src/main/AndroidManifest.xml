@@ -11,11 +11,12 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             tools:ignore="GoogleAppIndexingWarning">
-        <!--<activity android:name=".practice.MotionSampleActivity">-->
-        <!--</activity>-->
+        <activity android:name=".practice.MotionSampleActivity"/>
+        <activity android:name=".practice.AppBarMotionActivity"/>
+        <!--<activity android:name=".practice.DrawerMotionActivity"/>-->
         <activity android:name=".DetailActivity">
         </activity>
-        <activity android:name=".practice.MotionSampleActivity">
+        <activity android:name=".practice.DrawerMotionActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 

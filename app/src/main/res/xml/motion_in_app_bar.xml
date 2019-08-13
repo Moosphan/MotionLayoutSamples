@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--describe the animation for activity_motion_with_app_bar.xml-->
+<!--animate in the path way on a view-->
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:motion="http://schemas.android.com/tools">
+    <!-- Constraints to apply at the start of the animation -->
+    <ConstraintSet android:id="@+id/start">
+
+        <Constraint
+                android:id="@id/background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0"
+                android:translationX="0dp"
+                android:translationY="100dp"
+                motion:layout_constraintBottom_toBottomOf="parent"/>
+
+        <Constraint
+                android:id="@id/sun"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="3dp"
+                android:alpha="0.48"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        <Constraint
+                android:id="@id/logo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="6dp"
+                android:alpha="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+            <CustomAttribute
+                    app:attributeName="clickable"
+                    app:customBoolean="false"/>
+        </Constraint>
+        <Constraint
+                android:id="@id/tipText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+    </ConstraintSet>
+    <!-- Constraints to apply at the end of the animation -->
+    <ConstraintSet android:id="@+id/end">
+        <!--this view end point should be at bottom of parent-->
+        <Constraint
+                android:id="@+id/background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleX="1.2"
+                android:scaleY="1.2"
+                android:alpha="1.0"
+                motion:layout_constraintBottom_toBottomOf="parent"/>
+        <Constraint
+                android:id="@id/sun"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:alpha="1.0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+        <Constraint
+                android:id="@id/logo"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:alpha="0.2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+            <CustomAttribute
+                    app:attributeName="clickable"
+                    app:customBoolean="true"/>
+        </Constraint>
+        <Constraint
+                android:id="@+id/tipText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleY="1.6"
+                android:scaleX="1.6"
+                android:alpha="1.0"
+                android:layout_marginStart="62dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+    </ConstraintSet>
+
+    <!-- A transition describes an animation via start and end state -->
+    <Transition
+            app:constraintSetStart="@id/start"
+            app:constraintSetEnd="@id/end"
+            app:duration="4000">
+        <!--A KeyPosition modifies the path a view takes between the start and the end ConstraintSet.-->
+
+        <KeyFrameSet>
+            <KeyPosition
+                    app:framePosition="22"
+                    app:motionTarget="@id/sun"
+                    app:keyPositionType="parentRelative"
+                    app:percentY="0.48"/>
+            <KeyPosition
+                    app:framePosition="70"
+                    app:motionTarget="@id/sun"
+                    app:keyPositionType="parentRelative"
+                    app:percentY="0.08"/>
+
+            <KeyPosition
+                    app:framePosition="22"
+                    app:motionTarget="@id/logo"
+                    app:keyPositionType="parentRelative"
+                    app:percentY="0.48"/>
+            <KeyAttribute
+                    app:motionTarget="@id/logo"
+                    app:framePosition="22">
+                <CustomAttribute
+                        app:attributeName="alpha"
+                        app:customFloatValue="0"/>
+            </KeyAttribute>
+            <KeyAttribute
+                    app:motionTarget="@id/logo"
+                    app:framePosition="0">
+                <CustomAttribute
+                        app:attributeName="alpha"
+                        app:customFloatValue="1"/>
+            </KeyAttribute>
+
+
+            <KeyPosition
+                    app:framePosition="60"
+                    app:motionTarget="@id/tipText"
+                    app:keyPositionType="parentRelative"
+                    app:percentY="0.7"/>
+            <!--apply other animation attributes-->
+            <!--自定义需要改变的属性,支持自定义控件-->
+            <!--A CustomAttribute can be used to set any value that has a setter.-->
+            <KeyAttribute
+                    app:motionTarget="@id/sun"
+                    app:framePosition="0">
+                <CustomAttribute
+                        app:attributeName="colorFilter"
+                        app:customColorValue="#F3F3B0"/>
+            </KeyAttribute>
+
+            <KeyAttribute
+                    app:motionTarget="@id/sun"
+                    app:framePosition="100">
+                <CustomAttribute
+                        app:attributeName="colorFilter"
+                        app:customColorValue="#EDC73A"/>
+            </KeyAttribute>
+
+            <KeyAttribute
+                    app:motionTarget="@id/tipText"
+                    app:framePosition="10">
+                <CustomAttribute
+                        app:attributeName="textColor"
+                        app:customColorValue="@android:color/white"/>
+            </KeyAttribute>
+
+            <KeyAttribute
+                    app:motionTarget="@id/tipText"
+                    app:framePosition="90">
+                <CustomAttribute
+                        app:attributeName="textColor"
+                        app:customColorValue="#161616"/>
+            </KeyAttribute>
+
+            <!--延迟动画——0-85过程中将透明度一直维持在0.0-->
+            <!--<KeyAttribute-->
+                    <!--app:motionTarget="@id/tipText"-->
+                    <!--app:framePosition="85"-->
+                    <!--android:alpha="0.0"/>-->
+        </KeyFrameSet>
+
+        <!--<OnSwipe-->
+                <!--app:touchAnchorId="@id/sun"-->
+                <!--app:touchAnchorSide="bottom"-->
+                <!--app:dragDirection="dragRight"/>-->
+    </Transition>
+
+</MotionScene>

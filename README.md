@@ -13,11 +13,18 @@ This project contains android ConstraintLayout2.0 usages and MotionLayout usage,
 
 - 结合 MD 系列组件实现部分复杂交互效果
 
-- 发现一个问题：官方提供的demo在通过 DrawerMotion 与 CoordinatorLayout 中已有 Motion 交互时出现 NestedScrollView 滑动问题
+- 结合 **Lottie** 实现联动效果（目前停滞），暂时用 ViewPager 配合 Lottie 实现联动效果
 
 - Alpha version preview:
 
   ![alpha-preview](https://github.com/Moosphan/ConstraintSample/blob/86e8ee00637364a1274ebf22db5ff92e9cfb4ce1/arts/motion_preview1.gif)
+
+
+
+## 问题收集
+
+- 官方提供的demo在通过 DrawerMotion 与 CoordinatorLayout 中已有 Motion 交互时出现 NestedScrollView 滑动问题
+- android.support 版 ConstrintLayout：2.0.0-beta2 包在运行demo代码时出现 motion 的 progress 无效问题，并且设置 debugMode 会闪退。问题详见：[#95](https://github.com/googlesamples/android-ConstraintLayoutExamples/issues/95)
 
 ## 接下来
 
@@ -31,4 +38,10 @@ This project contains android ConstraintLayout2.0 usages and MotionLayout usage,
 
 ## Learn more
 
-每日一道面试题，挖掘更加强大的自己：[**Android Daily Interview**](https://github.com/Moosphan/Android-Daily-Interview)
+> *[Using MotionLayout to Animate Android Apps](https://codelabs.developers.google.com/codelabs/motion-layout/index.html?index=..%2F..index#0)*
+>
+> *[MotionLayout官方介绍](https://developer.android.com/training/constraint-layout/motion-layout)*
+
+## What's more?
+
+每日一道面试题，挖掘更加强大的自己👉：[**Android Daily Interview**](https://github.com/Moosphan/Android-Daily-Interview)

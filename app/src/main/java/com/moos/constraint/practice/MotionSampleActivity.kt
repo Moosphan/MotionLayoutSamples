@@ -6,6 +6,7 @@ import android.support.constraint.motion.MotionLayout
 import android.support.design.widget.AppBarLayout
 import android.util.Log
 import com.moos.constraint.R
+import kotlinx.android.synthetic.main.activity_motion_with_app_bar.*
 
 /**
  * Created by moosphon on 2019.08.12
@@ -21,8 +22,6 @@ class MotionSampleActivity : AppCompatActivity() {
     }
 
     private fun initMotion() {
-        val appBarLayout = findViewById<AppBarLayout>(R.id.appBarLayout)
-        val motionLayout = findViewById<MotionLayout>(R.id.motionLayout)
         appBarLayout.addOnOffsetChangedListener(AppBarLayout.OnOffsetChangedListener { _, verticalOffset ->
             val seekPosition = -verticalOffset / (appBarLayout.totalScrollRange.toFloat()/2)
             motionLayout.progress = seekPosition

@@ -13,10 +13,11 @@
             tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".practice.MotionSampleActivity"/>
         <activity android:name=".practice.AppBarMotionActivity"/>
-        <!--<activity android:name=".practice.DrawerMotionActivity"/>-->
+        <!--<activity android:name=".practice.LottieMotionActivity"/>-->
+        <activity android:name=".practice.DrawerMotionActivity"/>
         <activity android:name=".DetailActivity">
         </activity>
-        <activity android:name=".practice.DrawerMotionActivity">
+        <activity android:name=".practice.LottieMotionActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.motion.MotionLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@android:color/white"
+        app:motionDebug="NO_DEBUG"
+        app:layoutDescription="@xml/motion_balls">
+        <ImageView
+                android:id="@+id/ball1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:elevation="2dp"
+                android:src="@drawable/ic_basketball"/>
+
+        <ImageView
+                android:id="@+id/ball2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:elevation="2dp"
+                android:src="@drawable/ic_basketball"/>
+        <ImageView
+                android:id="@+id/ball3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:elevation="2dp"
+                android:src="@drawable/ic_basketball"/>
+        <ImageView
+                android:id="@+id/ball4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:elevation="2dp"
+                android:src="@drawable/ic_basketball"/>
+        <ImageView
+                android:id="@+id/ball5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:elevation="2dp"
+                android:src="@drawable/ic_basketball"/>
+</android.support.constraint.motion.MotionLayout>

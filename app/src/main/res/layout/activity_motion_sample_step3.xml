@@ -17,7 +17,7 @@
 
     <TextView
             android:id="@+id/tipText"
-            android:text="android is very funny"
+            android:text="大风车转呀转"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="18sp"

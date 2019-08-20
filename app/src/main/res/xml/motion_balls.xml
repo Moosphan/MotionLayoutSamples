@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--describe the animation for activity_multi_ball_layout.xml-->
 <MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
              xmlns:motion="http://schemas.android.com/apk/res-auto">
 
     <Transition
         motion:constraintSetStart="@id/start"
         motion:constraintSetEnd="@id/end"
-        motion:duration="5000"
+        motion:duration="3000"
         motion:motionInterpolator="easeInOut">
         <OnClick motion:targetId="@id/ball1"
                  motion:clickAction="toggle"/>

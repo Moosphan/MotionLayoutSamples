@@ -47,8 +47,7 @@
     <!-- A transition describes an animation via start and end state -->
     <Transition
         app:constraintSetStart="@id/start"
-        app:constraintSetEnd="@id/end"
-        app:duration="2800">
+        app:constraintSetEnd="@id/end">
         <!--A KeyPosition modifies the path a view takes between the start and the end ConstraintSet.-->
 
         <!--It can distort the path of a view to go through a third (or fourth, or fifth, ...) -->

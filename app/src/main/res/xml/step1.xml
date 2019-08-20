@@ -2,26 +2,24 @@
 <!--describe the animation for activity_motion_sample_step1.xml-->
 <MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
              xmlns:app="http://schemas.android.com/apk/res-auto">
-
-    <!--If you define constraints in both the layout and the MotionScene, only the constraints in the MotionScene are applied.-->
-
     <!-- A transition describes an animation via start and end state -->
     <Transition
         app:constraintSetStart="@id/start"
         app:constraintSetEnd="@id/end"
-        app:duration="2000">
-        <!-- MotionLayout will handle clicks on @id/red_star to "toggle" the animation between the start and end -->
+        app:duration="2200">
         <OnClick
-                app:targetId="@id/windmill"
+                app:targetId="@id/ball"
                 app:clickAction="toggle" />
     </Transition>
 
     <!-- Constraints to apply at the start of the animation -->
     <ConstraintSet android:id="@+id/start">
         <Constraint
-                android:id="@+id/windmill"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/ball"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"/>
     </ConstraintSet>
@@ -29,11 +27,11 @@
     <!-- Constraints to apply at the end of the animation -->
     <ConstraintSet android:id="@+id/end">
         <Constraint
-                android:id="@+id/windmill"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:scaleX="0.5"
-                android:scaleY="0.5"
+                android:id="@+id/ball"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"/>
     </ConstraintSet>

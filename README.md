@@ -17,7 +17,7 @@ This project contains android ConstraintLayout2.0 usages and MotionLayout usage,
 
 - Alpha version preview:
 
-  ![alpha-preview](https://github.com/Moosphan/ConstraintSample/blob/86e8ee00637364a1274ebf22db5ff92e9cfb4ce1/arts/motion_preview1.gif)
+  ![alpha-preview](https://github.com/Moosphan/ConstraintSample/blob/0a3de4f5d42049d599a5f768225c922808ceb324/arts/motion_preview.gif)
 
 
 

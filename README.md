@@ -5,11 +5,11 @@ This project contains android ConstraintLayout2.0 usages and MotionLayout usage,
 
 ## 最新进展
 
-- **ConstraintLayout 1.x** 功能大致实践完毕
+- **ConstraintLayout 1.x** 功能实践
 
-- **sample data** 用法应用完毕
+- **sample data** 用法实践
 
-- **MotionLayout** 入门版实践完毕
+- **MotionLayout** 入门版实践
 
 - 结合 MD 系列组件实现部分复杂交互效果
 
@@ -23,8 +23,8 @@ This project contains android ConstraintLayout2.0 usages and MotionLayout usage,
 
 ## 问题收集
 
-- 官方提供的demo在通过 DrawerMotion 与 CoordinatorLayout 中已有 Motion 交互时出现 NestedScrollView 滑动问题
-- android.support 版 ConstrintLayout：2.0.0-beta2 包在运行demo代码时出现 motion 的 progress 无效问题，并且设置 debugMode 会闪退。问题详见：[#95](https://github.com/googlesamples/android-ConstraintLayoutExamples/issues/95)
+- ~~官方提供的demo在通过 DrawerMotion 与 CoordinatorLayout 中已有 Motion 交互时出现 NestedScrollView 滑动问题~~
+- android.support 版 ConstrintLayout：2.0.0-beta2 包在运行demo代码时出现 motion 的 `progress` 无效问题，并且设置 debugMode 会闪退。问题详见：[#95](https://github.com/googlesamples/android-ConstraintLayoutExamples/issues/95)
 
 ## 接下来
 
@@ -32,6 +32,9 @@ This project contains android ConstraintLayout2.0 usages and MotionLayout usage,
 - 优化和重构 Motion 交互和逻辑代码
 - **MotionLayout** 等进一步熟悉和进阶用法以及效果实现
 - 将 **MotionLayout** 与 **Material design** 系列控件组合使用，实现复杂效果
+- MotionLayout 高级属性和用法
+- 社区详情页的创意动画实践
+- 打造炫酷音乐播放器交互的实战
 - 实战demo的制作以及相关文章编撰
 - 补充相关参考文档和国外相关文章
 - 文档说明和相关效果图的实时跟进
@@ -41,6 +44,8 @@ This project contains android ConstraintLayout2.0 usages and MotionLayout usage,
 > *[Using MotionLayout to Animate Android Apps](https://codelabs.developers.google.com/codelabs/motion-layout/index.html?index=..%2F..index#0)*
 >
 > *[MotionLayout官方介绍](https://developer.android.com/training/constraint-layout/motion-layout)*
+>
+> *[Introduction to MotionLayout](https://medium.com/google-developers/introduction-to-motionlayout-part-i-29208674b10d)*
 
 ## What's more?
 

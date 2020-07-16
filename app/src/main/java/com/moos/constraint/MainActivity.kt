@@ -1,9 +1,9 @@
 package com.moos.constraint
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.support.v7.widget.LinearLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.moos.constraint.practice.*
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -16,7 +16,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun init() {
-        recyclerView.layoutManager = LinearLayoutManager(this)
+        recyclerView.layoutManager =
+            androidx.recyclerview.widget.LinearLayoutManager(this)
         val adapter = EntranceListAdapter()
         recyclerView.adapter = adapter
         adapter.setOnEntranceSelectListener {

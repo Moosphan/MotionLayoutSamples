@@ -1,9 +1,9 @@
 package com.moos.constraint.practice
 
 import android.os.Bundle
-import android.support.constraint.motion.MotionLayout
-import android.support.design.widget.AppBarLayout
-import android.support.v7.app.AppCompatActivity
+import androidx.constraintlayout.motion.widget.MotionLayout
+import com.google.android.material.appbar.AppBarLayout
+import androidx.appcompat.app.AppCompatActivity
 import android.util.Log
 import com.moos.constraint.R
 import kotlinx.android.synthetic.main.activity_motion_with_app_bar.*

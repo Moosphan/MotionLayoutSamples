@@ -1,8 +1,8 @@
 package com.moos.constraint.widget
 
 import android.content.Context
-import android.support.constraint.motion.MotionLayout
-import android.support.design.widget.AppBarLayout
+import androidx.constraintlayout.motion.widget.MotionLayout
+import com.google.android.material.appbar.AppBarLayout
 import android.util.AttributeSet
 
 class MotionToolBar @JvmOverloads constructor(

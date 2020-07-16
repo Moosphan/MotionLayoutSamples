@@ -1,7 +1,7 @@
 package com.moos.constraint.practice
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import com.moos.constraint.R
 //todo:fix scroll problem
 class DrawerMotionActivity: AppCompatActivity() {

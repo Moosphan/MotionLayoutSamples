@@ -1,12 +1,12 @@
 package com.moos.constraint
 
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 
-class EntranceListAdapter:  RecyclerView.Adapter<EntranceListAdapter.EntranceViewHolder>(){
+class EntranceListAdapter:  androidx.recyclerview.widget.RecyclerView.Adapter<EntranceListAdapter.EntranceViewHolder>(){
     val entranceData = arrayListOf(
         Entrance(R.mipmap.ic_base, "Motion applies in basement"),
         Entrance(R.mipmap.ic_multi, "Motion applies with multi targets"),
@@ -44,7 +44,7 @@ class EntranceListAdapter:  RecyclerView.Adapter<EntranceListAdapter.EntranceVie
         mListener = callback
     }
 
-    class EntranceViewHolder(item: View): RecyclerView.ViewHolder(item)
+    class EntranceViewHolder(item: View): androidx.recyclerview.widget.RecyclerView.ViewHolder(item)
 
     data class Entrance(
         val icon: Int,

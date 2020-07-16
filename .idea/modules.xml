@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ConstraintSample.iml" filepath="$PROJECT_DIR$/ConstraintSample.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MotionLayoutSamples.iml" filepath="$PROJECT_DIR$/.idea/modules/MotionLayoutSamples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MotionLayoutSamples.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MotionLayoutSamples.app.iml" />
     </modules>
   </component>
 </project>

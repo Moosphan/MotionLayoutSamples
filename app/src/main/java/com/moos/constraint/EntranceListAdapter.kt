@@ -1,6 +1,5 @@
 package com.moos.constraint
 
-import androidx.recyclerview.widget.RecyclerView
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
@@ -12,7 +11,8 @@ class EntranceListAdapter:  androidx.recyclerview.widget.RecyclerView.Adapter<En
         Entrance(R.mipmap.ic_multi, "Motion applies with multi targets"),
         Entrance(R.mipmap.ic_appbar, "Motion applies with AppBar"),
         Entrance(R.mipmap.ic_drawer, "Motion applies with Drawer"),
-        Entrance(R.mipmap.ic_pager, "Motion applies with ViewPager")
+        Entrance(R.mipmap.ic_pager, "Motion applies with ViewPager"),
+        Entrance(R.mipmap.android_icon_orange, "Motion like loading ball")
     )
 
     private var mListener: ((position: Int) -> Unit)? = null

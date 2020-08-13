@@ -1,13 +1,7 @@
 package com.moos.constraint.practice
 
 import android.os.Bundle
-import androidx.constraintlayout.motion.widget.MotionLayout
-import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentManager
-import androidx.fragment.app.FragmentPagerAdapter
-import androidx.viewpager.widget.ViewPager
 import androidx.appcompat.app.AppCompatActivity
-import android.util.Log
 import com.moos.constraint.R
 import com.moos.constraint.widget.PageFragment
 import kotlinx.android.synthetic.main.activity_motion_with_lottie.*
@@ -31,7 +25,6 @@ class LottieMotionActivity : AppCompatActivity() {
         viewPager.adapter = adapter
         tabLayout.setupWithViewPager(viewPager)
         viewPager.addOnPageChangeListener(header as androidx.viewpager.widget.ViewPager.OnPageChangeListener)
-        header.setDebugMode(MotionLayout.DEBUG_SHOW_PROGRESS)
     }
 }
 

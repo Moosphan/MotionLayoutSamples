@@ -14,7 +14,7 @@ class AppBarMotionActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_motion_with_app_bar)
 
-        applyMotionWithAppBar()
+        //applyMotionWithAppBar()
     }
 
     private fun applyMotionWithAppBar() {

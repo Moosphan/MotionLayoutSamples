@@ -27,6 +27,7 @@ class MainActivity : AppCompatActivity() {
                 2 -> startActivity(Intent(this, AppBarMotionActivity::class.java))
                 3 -> startActivity(Intent(this, DrawerMotionActivity::class.java))
                 4 -> startActivity(Intent(this, LottieMotionActivity::class.java))
+                5 -> startActivity(Intent(this, DetailActivity::class.java))
             }
         }
     }

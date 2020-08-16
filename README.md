@@ -1,4 +1,6 @@
 # MotionLayoutSamples
+![header_bg](./arts/header_bg.png)
+
 This project contains android ConstraintLayout2.0 usages and MotionLayout usage, includes code practicing about animation as well.
 
 > 主要用来介绍一些关于 ***`ConstraintLayout`***、***`MotionLayout`***  的用法，还包含 MotionLayout 的实战训练。

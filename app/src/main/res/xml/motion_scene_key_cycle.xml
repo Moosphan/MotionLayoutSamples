@@ -52,6 +52,21 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.45"/>
+        <Constraint
+            app:layout_editor_absoluteY="623dp"
+            app:layout_editor_absoluteX="187dp"
+            android:id="@+id/indicator2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            app:layout_editor_absoluteY="615dp"
+            android:layout_height="8dp"
+            app:layout_editor_absoluteX="86dp"
+            android:layout_width="36dp"
+            android:id="@+id/indicator1"
+            app:layout_constraintBottom_toTopOf="@+id/guideButton" />
+        <Constraint android:id="@+id/barrier" />
 
     </ConstraintSet>
 

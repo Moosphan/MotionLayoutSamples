@@ -17,7 +17,7 @@ class MotionSampleActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         //setContentView(R.layout.activity_motion_sample)
-        setContentView(R.layout.activity_motion_sample_step1)
+        setContentView(R.layout.sample_step1_layout)
         //initMotion()
         //applyMotionWithAppBar()
     }

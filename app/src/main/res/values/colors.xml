@@ -11,4 +11,5 @@
     <color name="bgColor_dark">#2d2d2d</color>
     <color name="white">#ffffff</color>
     <color name="blue_magic">#07274C</color>
+    <color name="black">#000000</color>
 </resources>

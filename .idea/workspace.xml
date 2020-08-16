@@ -37,7 +37,27 @@
   <component name="ChangeListManager">
     <list default="true" id="01cec8ba-5f1d-44b7-b06a-c34760f7c254" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gitignore" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/moos/constraint/DetailActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/moos/constraint/DetailActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/moos/constraint/EntranceListAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/moos/constraint/EntranceListAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/moos/constraint/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/moos/constraint/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/moos/constraint/practice/MotionSampleActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/moos/constraint/practice/MotionSampleActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_motion_sample_step1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/sample_step1_layout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_motion_sample_step2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/sample_step2_layout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_motion_sample_step3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/sample_step3_layout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_motion_sample_step4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/sample_step4_layout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_motion_sample_step5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/sample_step5_layout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/entrance_item_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/entrance_item_layout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/scene_key_cycle_sample.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/scene_key_cycle_sample.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/scene_search_anim.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/scene_search_anim.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/xml/motion_scene_key_cycle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/xml/motion_scene_key_cycle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/xml/motion_scene_search.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/xml/motion_scene_search.xml" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,9 +86,9 @@
       <list>
         <option value="valueResourceFile" />
         <option value="layoutResourceFile_vertical" />
-        <option value="Kotlin Class" />
         <option value="layoutResourceFile" />
         <option value="resourceFile" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -96,7 +116,7 @@
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="device.picker.selection" value="MoosPhone" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi" />
-    <property name="memory.settings.postsync.last.time.stamp" value="1597237119234" />
+    <property name="memory.settings.postsync.last.time.stamp" value="1597453216605" />
     <property name="multi-representation-preview/Users/daozhi/.gradle/caches/modules-2/files-2.1/com.airbnb.android/lottie/3.4.0/34b4f88162ae85bcaceeaa65547be69ce9f0b185/lottie-3.4.0-sources.jar!/com/airbnb/lottie/LottieAnimationView.java_selected" value="Custom views" />
     <property name="multi-representation-preview/Users/daozhi/.gradle/caches/modules-2/files-2.1/com.google.android.material/material/1.1.0/7ba5bcd622e3d6d7ab6b9833717c4385e4ba0a51/material-1.1.0-sources.jar!/com/google/android/material/appbar/AppBarLayout.java_selected" value="Custom views" />
     <property name="multi-representation-preview/Users/daozhi/Hulk/github/MotionLayoutSamples/app/src/main/java/com/moos/constraint/widget/DrawerContentLayout.kt_selected" value="Custom views" />
@@ -104,7 +124,7 @@
     <property name="multi-representation-preview/Users/daozhi/Hulk/github/MotionLayoutSamples/app/src/main/java/com/moos/constraint/widget/ViewPagerHeader.kt_selected" value="Custom views" />
     <property name="multi-representation-preview/Users/daozhi/Library/Android/sdk/sources/android-28/android/widget/ImageView.java_selected" value="Custom views" />
     <property name="not.eligible.for.single.variant.sync" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.XML" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
@@ -256,30 +276,51 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="678" height="536" key="GridCell.Tab.0.bottom" timestamp="1596090064373">
-      <screen x="-262" y="-1057" width="1920" height="1057" />
+    <state x="500" y="161" key="#com.intellij.ide.util.MemberChooser" timestamp="1597487194679">
+      <screen x="34" y="23" width="1406" height="877" />
     </state>
-    <state width="678" height="536" key="GridCell.Tab.0.bottom/36.23.1404.877/-262.-1057.1920.1057@-262.-1057.1920.1057" timestamp="1596090064373" />
-    <state width="1361" height="360" key="GridCell.Tab.0.bottom/37.23.1403.877/-262.-1057.1920.1057@-262.-1057.1920.1057" timestamp="1595481678316" />
-    <state width="678" height="536" key="GridCell.Tab.0.center" timestamp="1596090064373">
-      <screen x="-262" y="-1057" width="1920" height="1057" />
-    </state>
-    <state width="678" height="536" key="GridCell.Tab.0.center/36.23.1404.877/-262.-1057.1920.1057@-262.-1057.1920.1057" timestamp="1596090064373" />
-    <state width="1361" height="360" key="GridCell.Tab.0.center/37.23.1403.877/-262.-1057.1920.1057@-262.-1057.1920.1057" timestamp="1595481678315" />
-    <state width="678" height="536" key="GridCell.Tab.0.left" timestamp="1596090064372">
-      <screen x="-262" y="-1057" width="1920" height="1057" />
-    </state>
-    <state width="678" height="536" key="GridCell.Tab.0.left/36.23.1404.877/-262.-1057.1920.1057@-262.-1057.1920.1057" timestamp="1596090064372" />
-    <state width="1361" height="360" key="GridCell.Tab.0.left/37.23.1403.877/-262.-1057.1920.1057@-262.-1057.1920.1057" timestamp="1595481678314" />
-    <state width="678" height="536" key="GridCell.Tab.0.right" timestamp="1596090064373">
-      <screen x="-262" y="-1057" width="1920" height="1057" />
-    </state>
-    <state width="678" height="536" key="GridCell.Tab.0.right/36.23.1404.877/-262.-1057.1920.1057@-262.-1057.1920.1057" timestamp="1596090064373" />
-    <state width="1361" height="360" key="GridCell.Tab.0.right/37.23.1403.877/-262.-1057.1920.1057@-262.-1057.1920.1057" timestamp="1595481678315" />
-    <state x="114" y="81" key="SettingsEditor" timestamp="1597150821626">
+    <state x="500" y="161" key="#com.intellij.ide.util.MemberChooser/34.23.1406.877/-262.-1057.1920.1057@34.23.1406.877" timestamp="1597487194679" />
+    <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1597370883634">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900/-262.-1080.1920.1080@0.0.1440.900" timestamp="1597370883634" />
+    <state width="1364" height="-5" key="GridCell.Tab.0.bottom" timestamp="1597487228585">
+      <screen x="34" y="23" width="1406" height="877" />
+    </state>
+    <state width="1398" height="24" key="GridCell.Tab.0.bottom/0.0.1440.900/-262.-1080.1920.1080@0.0.1440.900" timestamp="1597403772586" />
+    <state width="1364" height="-5" key="GridCell.Tab.0.bottom/34.23.1406.877/-262.-1057.1920.1057@34.23.1406.877" timestamp="1597487228585" />
+    <state width="1358" height="28" key="GridCell.Tab.0.bottom/35.23.1405.877/-262.-1057.1920.1057@35.23.1405.877" timestamp="1597453203671" />
+    <state width="678" height="536" key="GridCell.Tab.0.bottom/36.23.1404.877/-262.-1057.1920.1057@-262.-1057.1920.1057" timestamp="1596090064373" />
+    <state width="1361" height="360" key="GridCell.Tab.0.bottom/37.23.1403.877/-262.-1057.1920.1057@-262.-1057.1920.1057" timestamp="1595481678316" />
+    <state width="1364" height="-5" key="GridCell.Tab.0.center" timestamp="1597487228584">
+      <screen x="34" y="23" width="1406" height="877" />
+    </state>
+    <state width="1398" height="24" key="GridCell.Tab.0.center/0.0.1440.900/-262.-1080.1920.1080@0.0.1440.900" timestamp="1597403772585" />
+    <state width="1364" height="-5" key="GridCell.Tab.0.center/34.23.1406.877/-262.-1057.1920.1057@34.23.1406.877" timestamp="1597487228584" />
+    <state width="1358" height="28" key="GridCell.Tab.0.center/35.23.1405.877/-262.-1057.1920.1057@35.23.1405.877" timestamp="1597453203671" />
+    <state width="678" height="536" key="GridCell.Tab.0.center/36.23.1404.877/-262.-1057.1920.1057@-262.-1057.1920.1057" timestamp="1596090064373" />
+    <state width="1361" height="360" key="GridCell.Tab.0.center/37.23.1403.877/-262.-1057.1920.1057@-262.-1057.1920.1057" timestamp="1595481678315" />
+    <state width="1364" height="-5" key="GridCell.Tab.0.left" timestamp="1597487228583">
+      <screen x="34" y="23" width="1406" height="877" />
+    </state>
+    <state width="1398" height="24" key="GridCell.Tab.0.left/0.0.1440.900/-262.-1080.1920.1080@0.0.1440.900" timestamp="1597403772582" />
+    <state width="1364" height="-5" key="GridCell.Tab.0.left/34.23.1406.877/-262.-1057.1920.1057@34.23.1406.877" timestamp="1597487228583" />
+    <state width="1358" height="28" key="GridCell.Tab.0.left/35.23.1405.877/-262.-1057.1920.1057@35.23.1405.877" timestamp="1597453203670" />
+    <state width="678" height="536" key="GridCell.Tab.0.left/36.23.1404.877/-262.-1057.1920.1057@-262.-1057.1920.1057" timestamp="1596090064372" />
+    <state width="1361" height="360" key="GridCell.Tab.0.left/37.23.1403.877/-262.-1057.1920.1057@-262.-1057.1920.1057" timestamp="1595481678314" />
+    <state width="1364" height="-5" key="GridCell.Tab.0.right" timestamp="1597487228585">
+      <screen x="34" y="23" width="1406" height="877" />
+    </state>
+    <state width="1398" height="24" key="GridCell.Tab.0.right/0.0.1440.900/-262.-1080.1920.1080@0.0.1440.900" timestamp="1597403772585" />
+    <state width="1364" height="-5" key="GridCell.Tab.0.right/34.23.1406.877/-262.-1057.1920.1057@34.23.1406.877" timestamp="1597487228585" />
+    <state width="1358" height="28" key="GridCell.Tab.0.right/35.23.1405.877/-262.-1057.1920.1057@35.23.1405.877" timestamp="1597453203671" />
+    <state width="678" height="536" key="GridCell.Tab.0.right/36.23.1404.877/-262.-1057.1920.1057@-262.-1057.1920.1057" timestamp="1596090064373" />
+    <state width="1361" height="360" key="GridCell.Tab.0.right/37.23.1403.877/-262.-1057.1920.1057@-262.-1057.1920.1057" timestamp="1595481678315" />
+    <state x="146" y="102" key="SettingsEditor" timestamp="1597453363167">
+      <screen x="35" y="23" width="1405" height="877" />
+    </state>
     <state x="114" y="81" key="SettingsEditor/0.0.1440.900/-262.-1080.1920.1080@0.0.1440.900" timestamp="1597150821626" />
+    <state x="146" y="102" key="SettingsEditor/35.23.1405.877/-262.-1057.1920.1057@35.23.1405.877" timestamp="1597453363167" />
     <state x="432" y="72" width="615" height="735" key="find.popup" timestamp="1597313322474">
       <screen x="33" y="23" width="1407" height="877" />
     </state>

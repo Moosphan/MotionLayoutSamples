@@ -45,6 +45,7 @@ This project contains android ConstraintLayout2.0 usages and MotionLayout usage,
 
 ## Question Collection
 
+- 发现 KeyTrigger 在官方示例中无法正常运作问题
 - ~~官方提供的demo在通过 DrawerMotion 与 CoordinatorLayout 中已有 Motion 交互时出现 NestedScrollView 滑动问题~~
 - ~~android.support 版 ConstrintLayout：2.0.0-beta2 包在运行demo代码时出现 motion 的 `progress` 无效问题，并且设置 debugMode 会闪退。问题详见：[#95](https://github.com/googlesamples/android-ConstraintLayoutExamples/issues/95)~~
 

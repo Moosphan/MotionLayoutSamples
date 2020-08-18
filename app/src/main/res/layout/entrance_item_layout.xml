@@ -1,53 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        android:focusable="true"
-        android:background="@android:color/white">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:clickable="true"
+    android:focusable="true">
 
     <ImageView
-            android:id="@+id/entrance_item_ic"
-            android:layout_width="72dp"
-            android:layout_height="72dp"
-            tools:srcCompat="@tools:sample/avatars"
-            android:scaleType="fitCenter"
-            android:layout_marginTop="8dp"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="8dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="8dp"/>
-    <TextView
-            android:id="@+id/entrance_item_desc"
-            android:layout_width="315dp"
-            android:layout_height="0dp"
-            app:layout_constraintStart_toEndOf="@+id/entrance_item_ic"
-            android:layout_marginStart="8dp"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="16dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.012"
-            app:layout_constraintVertical_bias="0.0"
-            android:textSize="16sp"
-            android:textColor="#565677"
-            android:fontFamily="monospace"
-            tools:text="Motion applies in appbar"/>
+        android:id="@+id/entrance_item_ic"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:scaleType="fitCenter"
+        tools:srcCompat="@tools:sample/avatars" />
+
     <View
-        android:layout_width="0dp"
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="#eaeaef"
-        android:id="@+id/view2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintVertical_bias="1.0"
-        app:layout_constraintTop_toBottomOf="parent"/>
+        android:layout_below="@id/entrance_item_ic"/>
+    <TextView
+        android:id="@+id/entrance_item_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/entrance_item_ic"
+        android:layout_below="@+id/entrance_item_desc"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/white"
+        android:fontFamily="monospace"
+        android:textColor="#565677"
+        android:textSize="16sp"
+        tools:text="与AppBar联动" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/entrance_item_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="12dp"
+        android:layout_toRightOf="@+id/entrance_item_ic"
+        android:background="@color/white"
+        android:fontFamily="monospace"
+        android:textColor="#565677"
+        android:textSize="16sp"
+        tools:text="Motion applies in appbar" />
+
+</RelativeLayout>

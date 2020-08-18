@@ -304,8 +304,8 @@
                         <option name="values">
                           <map>
                             <entry key="assetSourceType" value="FILE" />
-                            <entry key="outputName" value="ic_user" />
-                            <entry key="sourceFile" value="$PROJECT_DIR$/../../设计资源/图标/businessandeconomy/SVG/networking.svg" />
+                            <entry key="outputName" value="ic_savings" />
+                            <entry key="sourceFile" value="$PROJECT_DIR$/../../设计资源/图标/businessandeconomy/SVG/savings.svg" />
                           </map>
                         </option>
                       </PersistentState>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@id/box_collect"
+            android:layout_width="92dp"
+            android:layout_height="86dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:translationX="92dp"/>
+        <Constraint
+            android:id="@id/box_delete"
+            android:layout_width="92dp"
+            android:layout_height="86dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:translationX="184dp"/>
+        <Constraint
+            android:id="@id/box_content"
+            android:layout_width="0dp"
+            android:layout_height="86dp"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:translationX="0dp"/>
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@id/box_collect"
+            android:layout_width="92dp"
+            android:layout_height="86dp"
+            app:layout_constraintEnd_toStartOf="@id/box_delete"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:visibility="visible"/>
+        <Constraint
+            android:id="@id/box_delete"
+            android:layout_width="92dp"
+            android:layout_height="86dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:visibility="visible"
+            />
+        <Constraint
+            android:id="@id/box_content"
+            android:layout_width="0dp"
+            android:layout_height="86dp"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:translationX="-140dp"/>
+    </ConstraintSet>
+
+    <Transition
+        app:constraintSetEnd="@id/end"
+        app:constraintSetStart="@+id/start"
+        app:motionInterpolator="easeInOut"
+        app:duration="500">
+        <OnSwipe
+            app:dragDirection="dragLeft"
+            app:touchAnchorSide="left"/>
+    </Transition>
+</MotionScene>

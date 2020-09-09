@@ -1,5 +1,4 @@
-<resources xmlns:tools="http://schemas.android.com/tools"
-           tools:locale="cn">
+<resources xmlns:tools="http://schemas.android.com/tools" tools:locale="cn">
     <string name="app_name">MotionLayoutSample</string>
     <string name="header_image_string" tools:ignore="MissingTranslation">header image</string>
     <string name="long_text_string" tools:ignore="MissingTranslation">
@@ -7,4 +6,7 @@
     </string>
     <string name="long_text_en" tools:ignore="MissingTranslation">\t\t\t\tAs you know, this website is not only about living a long, healthy life but also about doing something with it. And this new research is great news if you\'re looking to make a difference. Creating and contributing to the world is not only a foundational piece of living a healthy and happy life, but also a meaningful one.\n \t\t\t\tYou can\'t control the amount of time you spend on this planet, but you can control what you contribute while you\'re here. These contributions don\'t have to be major endeavors. Cook a meal instead of buying one. Play a game instead of watching one. Write a paragraph instead of reading one. You don\'t have to create big contributions, you just need to live out small ones each day.\n \t\t\t\tToo often we spend our lives visiting the world instead of shaping it. Be an adventurer, an inventor, an entrepreneur, an artist. Suggest your own ideas instead of reacting to everyone else\'s. Be an active participant in life and contribute to the world around you. Make good conversation. Make good art. Make good adventure. But above all, make something. Contributing and creating doesn\'t just make you feel alive, it keeps you alive.As you know, this website is not only about living a long, healthy life but also about doing something with it. And this new research is great news if you\'re looking to make a difference. Creating and contributing to the world is not only a foundational piece of living a healthy and happy life, but also a meaningful one.\n \t\t\t\tYou can\'t control the amount of time you spend on this planet, but you can control what you contribute while you\'re here. These contributions don\'t have to be major endeavors. Cook a meal instead of buying one. Play a game instead of watching one. Write a paragraph instead of reading one. You don\'t have to create big contributions, you just need to live out small ones each day.\n \t\t\t\tToo often we spend our lives visiting the world instead of shaping it. Be an adventurer, an inventor, an entrepreneur, an artist. Suggest your own ideas instead of reacting to everyone else\'s.
     </string>
+    <string name="motion_list_title">在RecyclerView中使用MotionLayout</string>
+    <string name="delete">删除</string>
+    <string name="collect">收藏</string>
 </resources>

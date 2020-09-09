@@ -14,24 +14,21 @@ This project contains android ConstraintLayout2.0 usages and MotionLayout usage,
 
 ## Effect Preview
 
-|                   :dark_sunglasses:                    |                    :deciduous_tree:                    |                :green_salad:                 |
-| :----------------------------------------------------: | :----------------------------------------------------: | :------------------------------------------: |
-| ![preview_balls_sport](./arts/preview_balls_sport.gif) |      ![preview_appbar](./arts/preview_appbar.gif)      | ![preview_lottie](./arts/preview_lottie.gif) |
-|    ![preview_keycycle](./arts/preview_keycycle.gif)    | ![preview_multi_state](./arts/preview_multi_state.gif) |                                              |
+|                   :dark_sunglasses:                    |                    :deciduous_tree:                    |                      :green_salad:                       |
+| :----------------------------------------------------: | :----------------------------------------------------: | :------------------------------------------------------: |
+| ![preview_balls_sport](./arts/preview_balls_sport.gif) |      ![preview_appbar](./arts/preview_appbar.gif)      |       ![preview_lottie](./arts/preview_lottie.gif)       |
+|    ![preview_keycycle](./arts/preview_keycycle.gif)    | ![preview_multi_state](./arts/preview_multi_state.gif) | ![preview_recyclerview](./arts/preview_recyclerview.gif) |
 
 
 
 ## Done
 
 - **ConstraintLayout 1.x** 功能实践
-
 - 升级适配至 AndroidX
-
 - 介绍 KeyFrameSet 藏宝阁
-
 - 结合 MD 系列组件实现部分复杂交互效果
-
 - 与 **Lottie** 实现联动
+- 在 RecyclerView 中的应用
 
 
 ## Next
@@ -39,7 +36,6 @@ This project contains android ConstraintLayout2.0 usages and MotionLayout usage,
 - 介绍和使用 **KeyTrigger**
 - **Motion Editor** 使用介绍
 - **多状态**的介绍和使用
-- 与 **RecyclerView** 的强强联合
 - 优化和改造sample示例
 - 更新Readme和效果图
 

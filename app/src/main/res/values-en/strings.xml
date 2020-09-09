@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">MotionLayoutSample</string>
+    <string name="motion_list_title">MotionLayout in RecyclerView</string>
+    <string name="delete">Delete</string>
+    <string name="collect">Collect</string>
 </resources>

@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.moos.constraint.adapter.EntranceListAdapter
 import com.moos.constraint.practice.*
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -37,6 +38,7 @@ class MainActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
                 7 -> startActivity(Intent(this, UserGuideActivity::class.java))
+                8 -> startActivity(Intent(this, MotionListActivity::class.java))
             }
         }
     }

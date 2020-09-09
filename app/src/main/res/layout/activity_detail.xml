@@ -1,11 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.motion.widget.MotionLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layoutDescription="@xml/step1"
-        tools:context=".DetailActivity">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/step1"
+    tools:context=".DetailActivity">
+    <SeekBar
+        android:id="@+id/simpleProgressBar"
+        android:layout_width="fill_parent"
+        android:layout_height="12dp"
+        android:max="100"
+        android:progress="0"
+        android:background="@null"
+        android:shape="oval"
+        android:splitTrack="false"
+        android:progressDrawable="@drawable/progress_background"
+        android:secondaryProgress="0"
+        android:thumbOffset="10dp"
+        android:thumb="@null" />
 
 </androidx.constraintlayout.motion.widget.MotionLayout>

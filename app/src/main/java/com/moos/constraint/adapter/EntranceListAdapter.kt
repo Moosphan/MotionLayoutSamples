@@ -41,14 +41,14 @@ class EntranceListAdapter(ctx: Context):  androidx.recyclerview.widget.RecyclerV
             "KeyTrigger的使用"
         ),
         Entrance(
-            R.drawable.ic_user,
-            "Multi scenes in User guide page",
-            "多状态实现用户引导页"
-        ),
-        Entrance(
             R.drawable.ic_chat,
             "Motion with KeyCycle",
             "KeyCycle实现钮扣抖动效果"
+        ),
+        Entrance(
+            R.drawable.ic_user,
+            "Multi scenes in User guide page",
+            "多状态实现用户引导页"
         ),
         Entrance(
             R.drawable.ic_wallet,
